@@ -82,22 +82,22 @@ public class RomanToInt {
     	String temp = Integer.toString(num);
     	switch(temp.length()) {
     		case 1:
-    			list[3] = temp.charAt(temp.length()-1);
+    			list[3] = temp.charAt(0);
     			break;
     		case 2:
-    			list[3] = temp.charAt(temp.length()-1);
-    			list[2] = temp.charAt(temp.length()-2);
+    			list[3] = temp.charAt(1);
+    			list[2] = temp.charAt(0);
     			break;
     		case 3:
-    			list[3] = temp.charAt(temp.length()-1);
-    			list[2] = temp.charAt(temp.length()-2);
-    			list[1] = temp.charAt(temp.length()-3);
+    			list[3] = temp.charAt(2);
+    			list[2] = temp.charAt(1);
+    			list[1] = temp.charAt(0);
     			break;
     		case 4:
-    			list[3] = temp.charAt(temp.length()-1);
-    			list[2] = temp.charAt(temp.length()-2);
-    			list[1] = temp.charAt(temp.length()-3);
-    			list[0] = temp.charAt(temp.length()-4);
+    			list[3] = temp.charAt(3);
+    			list[2] = temp.charAt(2);
+    			list[1] = temp.charAt(1);
+    			list[0] = temp.charAt(0);
     			break;
     	}
     	String result="";
