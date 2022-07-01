@@ -1,4 +1,4 @@
-package romanToInt;
+package leetCodeSolution;
 
 import java.util.ArrayList;
 
@@ -82,6 +82,7 @@ public class RomanToInt {
     	String temp = Integer.toString(num);
     	switch(temp.length()) {
     		case 1:
+    			// 盡量不使用temp.charAt(temp.length()-1)
     			list[3] = temp.charAt(0);
     			break;
     		case 2:
