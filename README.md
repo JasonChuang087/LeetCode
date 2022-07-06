@@ -14,3 +14,9 @@ Longest Common Prefix<br>
 Maximum Units on a Truck<br>
 Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts<br>
 Wiggle Subsequence<br>
+## 7/4-7/11<br>
+Candy<br>
+LongestConsecutive<br>
+AddTwoNumbers<br>
+FibonacciNumber<br>
+MedianofTwoSortedArrays<br>
