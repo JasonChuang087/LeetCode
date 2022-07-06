@@ -32,37 +32,6 @@ public class MergeTwoSortedLists {
             list2.next = mergeTwoLists(list1, list2.next);
             return list2;
         }
-//    	ListNode head = null;
-//    	ListNode current1 = list1;
-//    	ListNode current2 = list2;
-//        ListNode result = new ListNode();
-//    	ArrayList<Integer> nums = new ArrayList<Integer>();
-//    	while(list1!=null) {
-//    		System.out.println("list1: "+list1.val);
-//    		nums.add(list1.val);
-//    		list1 = list1.next;  		
-//    	}
-//    	while(list2!=null) {  	
-//    		System.out.println("list2: "+list2.val);
-//    		nums.add(list2.val);
-//    		list2 = list2.next;
-//    	}
-//    	Collections.sort(nums);
-//    	System.out.println(nums);
-//    	int i = 0;
-//    	while(i<nums.size()) {
-//            result.next = mergeTwoLists(list1,list2);
-//            result = result.next;
-//    		i++;
-//    	}
-//    	System.out.println("--------");
-//    	System.out.println(result.val);
-//    	System.out.println(result.next.val);
-//    	System.out.println(result.next.next.val);
-//    	System.out.println(result.next.next.next.val);
-//    	System.out.println(result.next.next.next.next.val);
-//    	System.out.println(result.next.next.next.next.next.val);
-//		return result;
     }
     
     public static class ListNode {
