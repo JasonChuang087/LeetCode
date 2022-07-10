@@ -15,14 +15,17 @@ public class MedianofTwoSortedArrays {
     	int len1 = nums1.length;
     	int len2 = nums2.length;
     	int[] merge = new int[len1+len2];
+    	int len3 = len1+len2;
+    	// merge arrays
     	System.arraycopy(nums1, 0, merge, 0, len1);
     	System.arraycopy(nums2, 0, merge, len1, len2);
     	Arrays.sort(merge);
-    	if(merge.length%2==0) {
-    		return (merge[merge.length/2] + merge[merge.length/2 - 1] )/ 2.0;
+    	
+    	if(len3%2==0) {
+    		return (merge[len3/2] + merge[len3/2 - 1] )/ 2.0;
     	}
     	
-        return merge[(merge.length-1)/2];
+        return merge[(len3-1)/2];
     }
 
 }
