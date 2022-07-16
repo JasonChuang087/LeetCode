@@ -1,7 +1,5 @@
 package leetCodeSolution;
 
-import java.util.ArrayList;
-
 public class InterleavingString {
 
 	public static void main(String[] args) {
@@ -18,45 +16,7 @@ public class InterleavingString {
 		System.out.println(isInterleave(s1, s2, s3));
 
 	}
-	/*
-	 * public static boolean isInterleave(String s1, String s2, String s3) {
-	 * System.out.println("redo"); if (s1.length() == 0 && s1.length() == 0 &&
-	 * s3.length() == 0) { return true; } if (s1.length() + s2.length() !=
-	 * s3.length()) { return false; } if(s1.equals("aabd")&&s2.equals("abdc")) {
-	 * return true; }
-	 * 
-	 * 
-	 * ArrayList<String> chars1 = new ArrayList<String>(); String cut1 = ""; String
-	 * alter_cut1 = ""; for (int i = 0; i < s1.length(); i++) { if
-	 * (s3.matches(s1.substring(0, i + 1) + "(.*)")) { chars1.add(s1.substring(0, i
-	 * + 1)); } } if (chars1.size() != 0) { cut1 = chars1.get(chars1.size() - 1); if
-	 * (s3.substring(0,cut1.length()).equals(cut1)) {
-	 * System.out.println("cut1 "+cut1); } if(chars1.size()>=2) { alter_cut1 =
-	 * chars1.get(0); System.out.println("alter cut1 "+alter_cut1); } }
-	 * 
-	 * String cut2 = ""; String alter_cut2 = ""; ArrayList<String> chars2 = new
-	 * ArrayList<String>(); for (int i = 0; i < s2.length(); i++) { if
-	 * (s3.matches(s2.substring(0, i + 1) + "(.*)")) { chars2.add(s2.substring(0, i
-	 * + 1)); } } if (chars2.size() != 0) { cut2 = chars2.get(chars2.size() - 1); if
-	 * (s3.substring(0,cut2.length()).equals(cut2)) {
-	 * System.out.println("cut2 "+cut2); } if(chars2.size()>=2) { alter_cut2 =
-	 * chars2.get(0); System.out.println("alter cut2 "+alter_cut2); } } if
-	 * (cut1.length() == 0 && cut2.length() == 0) { return false; } String
-	 * temp_s1=s1; String temp_s2=s2; String temp_s3=s3;
-	 * if(cut1.length()>=cut2.length()) { s1 = s1.replaceFirst(cut1, ""); s3 =
-	 * s3.replaceFirst(cut1, ""); System.out.println("s1 "+s1);
-	 * System.out.println("s3 "+s3); if(alter_cut1.length()!=0 && !isInterleave(s1,
-	 * s2, s3) ) { System.out.println("got you a"); s1 = temp_s1; s3 = temp_s3; s1 =
-	 * s1.replaceFirst(alter_cut1, ""); s3 = s3.replaceFirst(alter_cut1, ""); } }
-	 * else if (cut1.length()<cut2.length()) { s2 = s2.replaceFirst(cut2, ""); s3 =
-	 * s3.replaceFirst(cut2, ""); System.out.println("s2 "+s2);
-	 * System.out.println("s3 "+s3); if(alter_cut2.length()!=0 &&!isInterleave(s1,
-	 * s2, s3)) { System.out.println("got you b"); s2 = temp_s2; s3 = temp_s3; s1 =
-	 * s1.replaceFirst(alter_cut2, ""); s3 = s3.replaceFirst(alter_cut2, ""); } }
-	 * 
-	 * return isInterleave(s1, s2, s3); }
-	 */
-
+	
 	public static boolean isInterleave(String s1, String s2, String s3) {
 		int len1 = s1.length();
 		int len2 = s2.length();

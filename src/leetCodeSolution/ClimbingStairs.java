@@ -19,7 +19,6 @@ public class ClimbingStairs {
     	else {
     		stairs.put(n,climbStairs(n-1)+climbStairs(n-2));
     	}
-    	System.out.println(stairs);    	
         return climbStairs(n-1)+climbStairs(n-2);
     }
 
