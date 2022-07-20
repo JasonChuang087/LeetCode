@@ -20,3 +20,7 @@ LongestConsecutive<br>
 AddTwoNumbers<br>
 FibonacciNumber<br>
 MedianofTwoSortedArrays<br>
+## 7/11-7/18<br>
+## 7/18-7/25<br>
+Is Subsequence<br>
+Number of Matching Subsequences<br>
