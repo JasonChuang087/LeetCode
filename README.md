@@ -24,3 +24,6 @@ MedianofTwoSortedArrays<br>
 ## 7/18-7/25<br>
 Is Subsequence<br>
 Number of Matching Subsequences<br>
+How Many Numbers Are Smaller Than the Current Number<br>
+Check if Numbers Are Ascending in a Sentence<br>
+Search a 2D Matrix I/II<br>
