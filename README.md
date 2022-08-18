@@ -32,3 +32,10 @@ My Calendar I<br>
 Kth Smallest Element in a Sorted Matrix<br>
 Find and Replace Pattern<br>
 Valid Anagram<br>
+## 8/8-8/22<br>
+Unique Morse Code Words<br>
+Reduce Array Size to The Half<br>
+First Unique Character in a String<br>
+Letter Combinations of a Phone Number<br>
+Counting Bits<br>
+Combination Sum IV<br>
