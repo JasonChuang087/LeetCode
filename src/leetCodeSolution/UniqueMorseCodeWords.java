@@ -1,7 +1,9 @@
 package leetCodeSolution;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class UniqueMorseCodeWords {
 
@@ -16,20 +18,15 @@ public class UniqueMorseCodeWords {
 	
     public static int uniqueMorseRepresentations(String[] words) {
     	initDict();
-    	Map<String,Integer> morseCode = new HashMap<String,Integer>();
-    	String[] list = new String[words.length];
+        Set<String> set = new HashSet<String>();
     	for(int i=0;i<words.length;i++) {
     		String morse = "";
     		for(Character c:words[i].toCharArray()) {
     			morse = morse + map.get(c);
     		}
-    		list[i] = morse;
+    		set.add(morse);
     	}
-    	for(String s:list) {
-    		System.out.println(s);
-    		morseCode.put(s, morseCode.getOrDefault(s, 0) + 1);
-    	}
-        return morseCode.size();
+        return set.size();
     }
     
     public static void initDict() {
