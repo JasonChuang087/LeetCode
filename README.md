@@ -39,3 +39,8 @@ First Unique Character in a String<br>
 Letter Combinations of a Phone Number<br>
 Counting Bits<br>
 Combination Sum IV<br>
+## 8/22-9/5<br>
+Palindrome Linked List<br>
+Power of Four<br>
+Ransom Note<br>
+Valid Parentheses<br>
