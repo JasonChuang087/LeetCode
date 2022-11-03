@@ -6,6 +6,8 @@ public class FibonacciNumber {
 		// TODO Auto-generated method stub
 		System.out.println(fib(10));
 	}
+	
+
 
 	public static int fib(int n) {
 		if (n == 0)
